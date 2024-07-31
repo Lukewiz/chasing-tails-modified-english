@@ -6,6 +6,7 @@
 
 <h3 align="center">본 플러그인은 다음 아래에 있습니다.</h3>
 <h3 align="center"><a href="https://github.com/ParadiseDevTeam/chasing-tails" target="_blank">[본 플러그인 (GitHub)]</a></h3>
+
 [![YouTube](https://i.ytimg.com/vi/Y92NWM90d24/maxresdefault.jpg)](https://www.youtube.com/watch?v=Y92NWM90d24)
 
 <h2 align="center">다운로드</h2>
@@ -27,6 +28,8 @@
 <h2 align="center">버그 제보</h2>
 
 <h4 align="center"><a href="https://github.com/ParadiseDevTeam/chasing-tails/issues/new">여기를 눌러 이슈를 생성해주세요.</br >이슈를 생성하실 때에는 반드시 서버 버전, 로그, 오류 발생 조건 등을 상세히 작성해주시길 바랍니다.</a></h4>
+
+<h2 align="center">본 버그 제보는 이 레포의 버그 제보가 아닙니다!!!</h2>
 
 <h2 align="center">라이선스</h2>
 
