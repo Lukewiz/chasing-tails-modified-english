@@ -2,6 +2,10 @@
 
 <h3 align="center">쫓고 쫓기는 서바이벌 생존게임</h3>
 
+<h3 align="center">이 레포는 제가 수정한 내용을 포함합니다.</h3>
+
+<h3 align="center">본 플러그인은 다음 아래에 있습니다.</h3>
+<h3 align="center"><a href="https://github.com/ParadiseDevTeam/chasing-tails" target="_blank">[본 플러그인 (GitHub)]</a></h3>
 [![YouTube](https://i.ytimg.com/vi/Y92NWM90d24/maxresdefault.jpg)](https://www.youtube.com/watch?v=Y92NWM90d24)
 
 <h2 align="center">다운로드</h2>
