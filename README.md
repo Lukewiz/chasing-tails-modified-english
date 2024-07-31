@@ -8,6 +8,7 @@
 <h3 align="center"><a href="https://github.com/ParadiseDevTeam/chasing-tails" target="_blank">[본 플러그인 (GitHub)]</a></h3>
 
 <h3 align="center"><a href="https://github.com/Lukewiz/chasing-tails-modified/releases/tag/testsrv" target="_blank">[테스트 서버 (GitHub)]</a></h3>
+
 [![YouTube](https://i.ytimg.com/vi/Y92NWM90d24/maxresdefault.jpg)](https://www.youtube.com/watch?v=Y92NWM90d24)
 
 <h2 align="center">다운로드</h2>
