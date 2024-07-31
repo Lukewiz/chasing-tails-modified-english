@@ -15,11 +15,7 @@
 
 <b><p align="center">이외의 서버 구동기나 버전을 사용하여 발생하는 모든 일에는 책임지지 않습니다.</p></b>
 
-<h3 align="center"><a href="https://github.com/ParadiseDevTeam/chasing-tails/releases/latest/download/chasing-tails.jar" target="_blank">[플러그인 다운로드 (GitHub)]</a></h3>
-
-<p align="center">위 다운로드가 동작하지 않을 시 대안:</p>
-
-<h4 align="center"><a href="https://hangar.papermc.io/ParadiseDevTeam">[플러그인 다운로드 (Hangar)]</a></h4>
+<b><p align="center">릴리즈에 가서 chasing-tails.jar를 다운로드 해주세요.</p></b>
 
 - 게임 내 음성 채팅은 [Simple Voice Chat](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat) 모드를 사용하였습니다. 해당 모드 사용법은 개별적으로 찾아보시길 바랍니다.
 - 게임의 상세한 시스템은 [여기서](./docs/GAMEINFO.md) 확인 하실 수 있습니다.
