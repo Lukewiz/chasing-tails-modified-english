@@ -26,3 +26,8 @@
 <h4 align="center"><a href="https://github.com/ParadiseDevTeam/chasing-tails/issues/new">여기를 눌러 이슈를 생성해주세요.</br >이슈를 생성하실 때에는 반드시 서버 버전, 로그, 오류 발생 조건 등을 상세히 작성해주시길 바랍니다.</a></h4>
 
 <h4 align="center">본 버그 제보는 이 레포의 버그 제보가 아닙니다!!!</h2>
+
+<h2 align="center">빌드</h2>
+
+<h4 align="center">빌드는 기본 java가 21이여야 합니다.</h2>
+<h4 align="center">또한 Gradle이 설치되여있어야 합니다.</h2>
