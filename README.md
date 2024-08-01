@@ -7,7 +7,7 @@
 <h3 align="center">본 플러그인은 다음 아래에 있습니다.</h3>
 <h3 align="center"><a href="https://github.com/ParadiseDevTeam/chasing-tails" target="_blank">[본 플러그인 (GitHub)]</a></h3>
 
-<h3 align="center"><a href="https://github.com/Lukewiz/chasing-tails-modified/releases/tag/testsrv" target="_blank">[테스트 서버 (GitHub)]</a></h3>
+<h3 align="center"><a href="https://github.com/Lukewiz/chasing-tails-modified/releases/tag/testsrvV1.0.1" target="_blank">[테스트 서버 (GitHub)]</a></h3>
 
 [![YouTube](https://i.ytimg.com/vi/Y92NWM90d24/maxresdefault.jpg)](https://www.youtube.com/watch?v=Y92NWM90d24)
 
