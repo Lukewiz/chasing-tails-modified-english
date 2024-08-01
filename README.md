@@ -23,6 +23,13 @@
 - 게임의 상세한 시스템은 [여기서](./docs/GAMEINFO.md) 확인 하실 수 있습니다.
 - 게임의 변경 사항 목록은 [여기서](./docs/CHANGELOG.md) 확인 하실 수 있습니다.
 
+<h2 align="center">자주 묻는 질문</h2>
+<h4 align="center">근데 자주 묻는건 아닌것 같은ㄷ</h2>
+
+<h4 align="center">Q.다이아몬드로 타겟을 추적했는데 파티클이 안보여요.</h2>
+<h4 align="center">A.일부 모드나 클라이언트는 이 파티클이 표시되지 않을 수 있습니다.</h2>
+<h4 align="center">기본 마인크래프트를 추천합니다.</h2>
+
 <h2 align="center">버그 제보</h2>
 
 <h4 align="center"><a href="https://github.com/ParadiseDevTeam/chasing-tails/issues/new">여기를 눌러 이슈를 생성해주세요.</br >이슈를 생성하실 때에는 반드시 서버 버전, 로그, 오류 발생 조건 등을 상세히 작성해주시길 바랍니다.</a></h4>
