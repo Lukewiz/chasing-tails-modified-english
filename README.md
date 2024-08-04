@@ -1,13 +1,13 @@
 <h1 align="center">꼬리잡기 (chasing-tails)</h1>
 
-<h3 align="center">쫓고 쫓기는 서바이벌 생존게임</h3>
+<h3 align="center">쫓고 쫓기는 서바이벌 생존게임</p>
 
-<h3 align="center">이 레포는 제가 수정한 내용을 포함합니다.</h3>
+<h3 align="center">이 레포는 제가 수정한 내용을 포함합니다.</p>
 
-<h3 align="center">본 플러그인은 다음 아래에 있습니다.</h3>
-<h3 align="center"><a href="https://github.com/ParadiseDevTeam/chasing-tails" target="_blank">[본 플러그인 (GitHub)]</a></h3>
+<h3 align="center">본 플러그인은 다음 아래에 있습니다.</p>
+<h3 align="center"><a href="https://github.com/ParadiseDevTeam/chasing-tails" target="_blank">[본 플러그인 (GitHub)]</a></p>
 
-<h3 align="center"><a href="https://github.com/Lukewiz/chasing-tails-modified/releases/tag/testsrvV1.0.1" target="_blank">[테스트 서버 (GitHub)]</a></h3>
+<h3 align="center"><a href="https://github.com/Lukewiz/chasing-tails-modified/releases/tag/testsrvV1.0.1" target="_blank">[테스트 서버 (GitHub)]</a></p>
 <b><p align="center">바로 테스트하기: INFTag.exaroton.me</p></b>
 
 [![YouTube](https://i.ytimg.com/vi/Y92NWM90d24/maxresdefault.jpg)](https://www.youtube.com/watch?v=Y92NWM90d24)
@@ -25,10 +25,10 @@
 - 게임의 변경 사항 목록은 [여기서](./docs/CHANGELOG.md) 확인 하실 수 있습니다.
 
 <h2 align="center">자주 묻는 질문</h2>
-<h4 align="center">근데 자주 묻는건 아닌것 같은ㄷ</h2>
+<h4 align="center">근데 자주 묻는건 아닌것 같은ㄷ</p>
 
-<h4 align="center">Q.다이아몬드로 타겟을 추적했는데 파티클이 안보여요.</h2>
-<h4 align="center">A.일부 모드나 클라이언트는 이 파티클이 표시되지 않을 수 있습니다.</h2>
+<h4 align="center">Q.다이아몬드로 타겟을 추적했는데 파티클이 안보여요.</p>
+<h4 align="center">A.일부 모드나 클라이언트는 이 파티클이 표시되지 않을 수 있습니다.</p>
 <h4 align="center">기본 마인크래프트를 추천합니다.</h2>
 
 <h2 align="center">버그 제보</h2>
