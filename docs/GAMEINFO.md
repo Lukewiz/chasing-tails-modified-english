@@ -1,78 +1,77 @@
-# 게임 설명
+# Game Description
 
-패러다이스의 컨텐츠인 꼬리잡기 미니게임 플러그인의 게임 설명입니다.
-(본 글은 제가 변경한 내용을 포함합니다.)
-
----
-
-## 기본 시스템
-
-- **최소 3명 필요 (관전자는 해당 플레이어 수에 적용되지 않음.) 최대 10명까지.**
-
-- 네더, 오버월드 비율 1대1 (오버월드 1500, 1500에서 포탈 열면 네더 1500, 1500에서 나와짐).
-
-- 드래곤을 잡아도 엔드 시티 포탈은 미활성, 재소환 불가.
-
-- 자신이 죽여야 하는 타겟 플레이어를 부여받게 됨.
-
-- **3초 무적 불가.**
-
-- 다이아 우클릭시 다이아 1개가 사용되며 타겟 플레이어가 자기로 부터 어디에 있는지 방향을 제공받게됨.
-
-- **플레이어가 게임을 나가면 플레이어의 헌터의 노예가 됨. (V1.1 Release)**
-
-## 타겟 시스템
-
-- 타겟 이외의 플레이어는 때리지 못함.
-
-    - 타겟이 헌터를 공격할 수 있음. 하지만 넉백만 가능하며 대미지 불가. 투사체로도 피해 가능.
-
-    - 헌터의 노예는 대미지 및 사망까지 가능할 수 있음.
-
-- 자신의 타겟을 죽이면, 해당 타겟은 자신의 노예가 됨.
-
-    - 이후 자신의 타겟의 타겟을 다시 부여받음.
-
-    - 자신의 타겟을 한대 때린다음 1분 동안은 타겟이 자연사를 해도 노예가 됨.
-
-    - 노예 1명이 추가될 때 마다 자신의 최대 체력이 1칸 감소.
-
-- 자신을 타겟으로 삼는 사람이 반경 50미터 안에 있을경우 심장박동 소리가 남. (긴장 유발 / 거리에 따라 소리의 크기가 다름)
-
-- 꼬리 잡기 색상 순서는 →아쿠아→회→보→남→파→초→노→주→빨→핑→
-
-## 사망 시스템
-
-- 자연사 했을때: 죽은 자리에서 2분간 움직일 수 없다가 불사의 토템 효과와 함께 리스폰.
-  - 노예 사망: 죽은 자리에서 30초간 일반 자연사 상태와 동일, 이후 주인 위치로 텔레포트 되며 리스폰.
-  - 두 경우 모두 인벤 세이브
-
-- 엔드에서 자연사하면 엔드 스폰지점(흑요석 스폰)에서 리스폰. (엔드 공허 무한 죽음 방지)
-
-- 잡혀서 죽었을때: 아이템 유지, 죽은 자리에서 리스폰되며 처치한 플레이어의 노예가 됨.
-
-## 노예 시스템:
-
-- 노예는 50칸 이내 자신의 주인 옆에 있어야하며 나가면 0.5초에 하트 한칸씩 까이다가 사망.
-
-- 노예는 항상 자신의 주인 위치가 나침반에 뜸.
-
-- 노예가 죽으면 주인 위치로 리스폰, 배고픔 값 리셋. (배고픔, 포화, 피로 모두 기본값)
-
-- 노예는 나약함 2 상시버프 + 최대 체력 하트 5칸.
+This document explains the mini-game plugin for the "Tail Tag" content in Paradise. (This text includes modifications made by me.)
 
 ---
 
-# 실행 방법
+## Basic System
 
-`/chasingtails start` 또는 `/ct start`
+- **Requires at least 3 players (spectators do not count towards this number). Up to 10 players maximum.**
 
-게임 시작/종료 명령어입니다.
+- Nether and Overworld coordinates are in a 1:1 ratio (Overworld coordinates 1500, 1500 will open a portal to Nether coordinates 1500, 1500).
 
-기본적으로 게임 시작 이후 진행 상황은 서버 종료 후에도 저장되며, 게임 종료를 원하시는게 아닌 경우 명령어를 다시 입력하실 필요가 없습니다.
+- Even if you capture the dragon, the End City portal remains inactive and cannot be respawned.
 
-**게임을 시작하기 이전 랜덤 좌표 텔레포트로 인하여 서버가 청크로딩을 갑자기 진행하기 때문에, 서버 속도가 일시적으로 느려질 수 있습니다. [Chunky](https://github.com/pop4959/Chunky) 플러그인을 이용하여 청크를 미리 로딩하는것을 추천드립니다.**
+- You will be assigned a target player that you need to eliminate.
 
-## 권장 조치
+- **3-second invulnerability is not available.**
 
-플레이어가 움직일 수 없는 상황일 때, 공중에 계속 떠 있는 경우 서버에서 나는 것이 허용되지 않아 추방되는 경우가 있습니다. `server.properties` 파일에서 `enable-flying=true`로 변경 후 게임 시작을 권장합니다.
+- Right-clicking with a diamond uses 1 diamond and provides the direction to your target player.
+
+- **If a player leaves the game, they become the hunter’s slave. (V1.1 Release)**
+
+## Target System
+
+- You cannot hit players who are not your target.
+
+    - Targets can attack hunters, but can only deal knockback and no damage. They can also be damaged by projectiles.
+
+    - Hunter's slaves can be damaged and even killed.
+
+- If you kill your target, they become your slave.
+
+    - You will then receive a new target assignment.
+
+    - If you hit your target once, they will become your slave even if they die naturally within 1 minute.
+
+    - Each time a new slave is added, your maximum health decreases by 1 heart.
+
+- If someone makes you their target and is within a 50-meter radius, a heartbeat sound is heard (indicating tension / the sound's volume varies with distance).
+
+- The color sequence for Tail Tag is → Aqua → Gray → Blue → Light Blue → Cyan → Green → Yellow → Orange → Red → Pink →
+
+## Death System
+
+- Natural death: Respawn with the Immortality Totem effect after being unable to move for 2 minutes at the place of death.
+  - Slave death: Acts like natural death for 30 seconds, then teleports to the owner’s location and respawns.
+  - In both cases, inventory is saved.
+
+- If you die naturally in the End, respawn at the End spawn point (Obsidian spawn) to prevent endless death in the End Void.
+
+- If you are captured and killed: Retain items, respawn at the place of death, and become the slave of the player who killed you.
+
+## Slave System
+
+- Slaves must stay within 50 blocks of their owner; if they leave, they lose 1 heart every 0.5 seconds and eventually die.
+
+- Slaves always have their owner's location displayed on their compass.
+
+- If a slave dies, they respawn at their owner’s location and their hunger value resets (hunger, saturation, and fatigue all return to default values).
+
+- Slaves have a permanent Weakness II buff and a maximum health of 5 hearts.
+
+---
+
+# How to Run
+
+`/chasingtails start` or `/ct start`
+
+This command starts or stops the game.
+
+By default, the game progress is saved even after the server shuts down, so you don't need to re-enter the command unless you want to stop the game.
+
+**Before starting the game, the server may temporarily slow down due to chunk loading caused by random teleportation. It is recommended to use the [Chunky](https://github.com/pop4959/Chunky) plugin to preload chunks.**
+
+## Recommended Actions
+
+When players are unable to move or are constantly floating in the air, they may be kicked from the server due to non-compliance with server rules. It is recommended to change `server.properties` to `enable-flying=true` before starting the game.
