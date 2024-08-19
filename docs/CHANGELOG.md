@@ -1,62 +1,59 @@
-# 패치노트 (2023/8/8 - 2023/9/23)
+# Patch Notes (2023/8/8 - 2023/9/23)
 
-## 시스템 변경 + 버그 패치
+## System Changes + Bug Fixes
 
-1. [게임 진행중일때 새로 접속한 플레이어는 강제 관전자] → [게임 진행중일때 새로 접속한 플레이어는 관전자]
-2. [서버에 접속해있는 모든 플레이어 대상으로 게임 시작] → [게임모드가 관전인 플레이어 제외 서버에 접속해있는 모든 플레이어 대상으로 게임 시작]
-3. [관리자 접속 불가] -> [로그 없이 관리자 접속]
-4. [포션 제작, 양조 불가] → [포션 만들수있게 변경]
-5. [헌터 공격 불가능] → [헌터 공격시 넉백은 가능하나 대미지 불가]
-6. [헌터를 대상으로 투사체 불가] → [헌터에게 투사체 투척 가능]
-7. [노예] 명칭 → [꼬리] / 시청자 과몰입 방지
-8. [헌터의 꼬리 공격 불가능] → [헌터의 꼬리 공격 및 살해 가능]
-9. **1분 예비 죽음 타이머 시간 초과 이후 죽었을때 마지막으로 공격한 이의 노예가 되는 문제 수정.**
-10. 죽은 직후가 아닌 그 이후에 몬스터가 인식하는 문제 수정.
-11. 엔더진주를 통하여 자살 시도시 내 자신이 내 자신의 노예가 되는 문제 수정.
-12. 자연사 상태에서 텔레포트 가능 문제 수정.
-13. 추가: 월드보더 내 엔더유적이 없는 경우 월드보더 좌표 내에 엔더유적이 존재하는 시드를 이용해 컨텐츠 진행.
-14. 추가: 헌터가 기른 늑대가 타겟을 공격 가능하게 함.
-15. 추가: 헌터가 TNT 직접 불을 붙여 터뜨려 타겟에서 피해를 줄 수 있도록 함.
-16. 히로빈 삭제됨.
+1. [Players who join during the game are forced spectators] → [Players who join during the game are spectators]
+2. [Game starts for all players connected to the server] → [Game starts for all players connected to the server except those in spectator mode]
+3. [Admin connection not allowed] → [Admin connection allowed without logs]
+4. [Potion brewing and creation not possible] → [Potion brewing and creation enabled]
+5. [Hunter cannot be attacked] → [Hunters can be knocked back but cannot be damaged]
+6. [Projectiles cannot be thrown at hunters] → [Projectiles can be thrown at hunters]
+7. [Slave] title → [Tail] / Preventing excessive immersion for spectators
+8. [Hunter's tail cannot be attacked] → [Hunter's tail can be attacked and killed]
+9. **Fixed the issue where, after a 1-minute preliminary death timer expires, the player would become the slave of the last attacker.**
+10. Fixed the issue where monsters would not recognize the player immediately after death.
+11. Fixed the issue where attempting to commit suicide with Ender Pearls would result in the player becoming their own slave.
+12. Fixed the issue where teleportation was possible in a natural death state.
+13. Added: If there are no End Cities within the world border, the content progresses using a seed where an End City exists within the world border coordinates.
+14. Added: Hunters' wolves can now attack targets.
+15. Added: Hunters can now ignite and explode TNT to damage targets.
+16. Herobrine removed.
 
-## 잘못된 정보 정정:
-- **플래그 자연사 버그 확실히 수정 했습니다.**
-    - 첨언하여 헌터에게서 대미지 입은 이후 1분 이내로 자연사할 시 노예로 편입되는 현상의 경우 **정상 상황이며 버그가 아닙니다.** 플래그의 경우 이 코드 동작 중 1줄의 코드 작성을 깜빡하여 발생한 버그였습니다.
-- 컨텐츠 영상 첫 화에서 우융님이 죽으신 원인은 **엔더진주 낙하 데미지로 인한 자연사**이며, 해당 사망 시점으로 즉시 게임이 끝납니다. 노예 편입 코드가 도달하지 않으며 **이는 버그가 아닙니다.**
+## Incorrect Information Correction:
+- **The natural death bug with flags has been definitely fixed.**
+    - To clarify, if a player dies naturally within 1 minute after taking damage from a hunter, they become a slave. This is **normal behavior and not a bug.** The flag issue was due to a missed line of code.
+- In the content video’s first episode, the cause of Wuyung’s death was **natural death from Ender Pearl fall damage**, and the game ends immediately at that death point. The slave integration code does not reach this point, and **this is not a bug.**
 
-# 패치노트 (2024/6/5 ~ 2024/6/7)
+# Patch Notes (2024/6/5 - 2024/6/7)
 
-## 시스템 변경 + 버그 패치
+## System Changes + Bug Fixes
 
-### 코드 전체 재작성 및 구조 정리
+### Complete Code Rewrite and Structure Cleanup
 
-1. 노예 1명당 주인 최대 체력 1칸 제거
-2. 노예는 팀 색깔 가죽 갑옷 풀세트를 입고있음 (다른 갑옷 착용 불가)
-3. 모든 플레이어 인벤토리 세이브
-4. 노예가 죽었을때 팀 전부에게 'xx(이)가 사망했습니다 (30초 후 리스폰)' 메시지 표시 
-5. 노예가 죽으면 30초 동안 그 자리에서 행동 하지 못하다 주인 위치에서 리스폰 
-6. 노에가 죽었을 때 리스폰 시간 몇 초 남았는지 머리 위에 표시
-7. 엔더드래곤 알 들어도 추가 버프 없음
-8. 월드보더 제거
-9. 히로빈 삭제됨.
-
+1. Removed the 1-heart reduction in maximum health per slave.
+2. Slaves wear full sets of dyed leather armor (other armor types not allowed).
+3. Save all player inventories.
+4. When a slave dies, a message is displayed to the entire team: 'xx has died (respawning in 30 seconds).'
+5. When a slave dies, they cannot act for 30 seconds at their death location before respawning at their owner’s location.
+6. Display the remaining respawn time above the slave’s head.
+7. No additional buffs for obtaining Ender Dragon eggs.
+8. Removed world border.
+9. Herobrine removed.
 
 # V1.0 RELEASE (2024/7/31)
 
-## 시스템 변경
+## System Changes
 
-
-1. 플레이어 7~8명에서 5명으로 변경
-2. 시작시 3초 카운트다운 추가
-3. 타겟-헌터 관계를 <빨<주<노<초<파<로 변경
-4. 히로빈 삭제됨.
+1. Reduced the number of players from 7-8 to 5.
+2. Added a 3-second countdown at the start.
+3. Changed the target-hunter relationship to <Red<Orange<Yellow<Light Blue<Cyan<Blue.
+4. Herobrine removed.
 
 # V1.1 RELEASE (2024/7/31)
 
-## 시스템 변경
+## System Changes
 
-
-1. **!!중요!!** 이제부터 플레이어가 나가면 게임이 멈추지 않고 나간 플레이어는 나간 플레이어의 헌터의 꼬리가 됩니다.
-2. 풀레이 가능 인원을 2명 추가 (3~10명)
-3. 팀 2개 추가 (2번과 동일 내용, 아쿠아색, 회색)
-4. 히로빈 삭제됨.
+1. **!!Important!!** From now on, if a player leaves, the game does not stop and the leaving player becomes the hunter's tail.
+2. Increased the playable number of players by 2 (3-10 players).
+3. Added 2 new teams (same as 2, Aqua and Gray).
+4. Herobrine removed.
